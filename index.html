@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="images/ttc_icon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="popup">
+        <div class="popup_content">
+            <div id="popup_text"></div>
+            <div id="popup_close">&times;</div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div>
+            <div class="title">Tic Tac Toe</div>
+            <div class="player_turn">Who is playing:&nbsp;<span id="player_turn_value">X</span></div>
+        </div>
+
+        <div class="table_tic_tac_toe">
+            <div class="row">
+                <div><button id="button00"></button></div>
+                <div><button id="button01"></button></div>
+                <div><button id="button02"></button></div>
+            </div>
+            <div class="row">
+                <div><button id="button10"></button></div>
+                <div><button id="button11"></button></div>
+                <div><button id="button12"></button></div>
+            </div>
+            <div class="row">
+                <div><button id="button20"></button></div>
+                <div><button id="button21"></button></div>
+                <div><button id="button22"></button></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            X Victories:&nbsp;<span id="xVictories">0</span>
+            <button id="buttonReset">
+                <svg id="svg_reset" xmlns="http://www.w3.org/2000/svg">
+                    <image href="images/reset_icon.svg" class="image_reset" />
+                    <title>Restart</title>
+                </svg></button>
+            O Victories:&nbsp;<span id="oVictories">0</span>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
