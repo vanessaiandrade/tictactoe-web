@@ -2,7 +2,8 @@
 
 I did this development on the basis of my development of a tic-tac-toe game in Java as an exercise in web development.
 
-### **This web app is responsive!**
+### This web app is responsive!*
+* You can play on your PC, your tablet and your smartphone.
 
 
 ## Game Rules
@@ -19,6 +20,7 @@ I did this development on the basis of my development of a tic-tac-toe game in J
 ## Screenshot
 
 ![web-tic-tac-toe](https://github.com/vanessaiandrade/tictactoe-web/assets/104696266/f814284b-791b-4c0c-a52c-f29863532bb7)
+![oWinner](https://github.com/vanessaiandrade/tictactoe-web/assets/104696266/682809b0-65ac-4576-b73f-8bdcda074367)
 
 
 ## Tech stack 
