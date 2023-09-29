@@ -19,8 +19,8 @@ I did this development on the basis of my development of a tic-tac-toe game in J
 
 ## Screenshot
 
-![web-tic-tac-toe](https://github.com/vanessaiandrade/tictactoe-web/assets/104696266/f814284b-791b-4c0c-a52c-f29863532bb7)
-![oWinner](https://github.com/vanessaiandrade/tictactoe-web/assets/104696266/682809b0-65ac-4576-b73f-8bdcda074367)
+![web-tic-tac-toe](https://github.com/vanessaiandrade/tictactoe-web/assets/104696266/727d01e5-7293-4c2c-8ab5-34d07938f7f9)
+![oWinner](https://github.com/vanessaiandrade/tictactoe-web/assets/104696266/2bacdd82-79f5-44a6-a589-34028ce91f62)
 
 
 ## Tech stack 
