@@ -8,17 +8,27 @@ let positions = [
     [null, null, null],
     [null, null, null]
 ];
-let lastBeginnerPlayer = "X";
+let lastBeginnerPlayer = (localStorage.getItem("playerTurnValue") == null) ? "X" : localStorage.getItem("playerTurnValue");
 let whoIsPlaying = lastBeginnerPlayer;
 let turns = 0;
-let xVictories = 0;
-let oVictories = 0;
+let xVictories = (localStorage.getItem("xVictories") == null) ? 0 : localStorage.getItem("xVictories");
+let oVictories = (localStorage.getItem("oVictories") == null) ? 0 : localStorage.getItem("oVictories");
 
 // Methods
 main();
 
 function main() {
     initializeButtonsEvents();
+
+    const colorPlayer = (whoIsPlaying == "X") ? "player_x" : "player_o";
+
+    const playerTurnValue = document.getElementById("player_turn_value");
+    playerTurnValue.innerHTML = whoIsPlaying;
+    playerTurnValue.className = colorPlayer;
+
+
+    document.getElementById("xVictories").innerHTML = xVictories;
+    document.getElementById("oVictories").innerHTML = oVictories;
 }
 
 function initializeButtonsEvents() {
@@ -130,11 +140,11 @@ function checkWinner(test) {
 
 function changePlayerTurn() {
     whoIsPlaying = whoIsPlaying == "X" ? "O" : "X";
-    const colorPlayer = (whoIsPlaying == "X") ? "#ff615f" : "#3ec5f3";
+    const colorPlayer = (whoIsPlaying == "X") ? "player_x" : "player_o";
 
     const playerTurnValue = document.getElementById("player_turn_value");
     playerTurnValue.innerHTML = whoIsPlaying;
-    playerTurnValue.style.color = colorPlayer;
+    playerTurnValue.className = colorPlayer
 }
 
 function endGame(restart) {
@@ -148,11 +158,16 @@ function endGame(restart) {
     }
 
     whoIsPlaying = lastBeginnerPlayer;
-    const colorPlayer = (whoIsPlaying == "X") ? "#ff615f" : "#3ec5f3";
+
+    localStorage.setItem("playerTurnValue", whoIsPlaying);
+    localStorage.setItem("xVictories", xVictories);
+    localStorage.setItem("oVictories", oVictories);
+
+    const colorPlayer = (whoIsPlaying == "X") ? "player_x" : "player_o";
 
     const playerTurnValue = document.getElementById("player_turn_value");
     playerTurnValue.innerHTML = whoIsPlaying;
-    playerTurnValue.style.color = colorPlayer;
+    playerTurnValue.className = colorPlayer
 
     restoreDefaultButtons();
 }

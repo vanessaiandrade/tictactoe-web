@@ -36,6 +36,14 @@ span {
     font-weight: bold;
 }
 
+.player_x {
+    color: #ff615f;
+}
+
+.player_o {
+    color: #3ec5f3;
+}
+
 .table_tic_tac_toe {
     margin: 25px 0 25px 0;
 }
