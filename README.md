@@ -5,6 +5,9 @@ I did this development on the basis of my development of a tic-tac-toe game in J
 ### This web app is responsive!*
 * You can play on your PC, your tablet and your smartphone.
 
+### This web app use localStorage
+* I used it to be able to save data, so the match data remains even if I close the web app.
+
 
 ## Game Rules
 
