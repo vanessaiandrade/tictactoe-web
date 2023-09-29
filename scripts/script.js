@@ -130,7 +130,11 @@ function checkWinner(test) {
 
 function changePlayerTurn() {
     whoIsPlaying = whoIsPlaying == "X" ? "O" : "X";
-    document.getElementById("player_turn_value").innerHTML = whoIsPlaying;
+    const colorPlayer = (whoIsPlaying == "X") ? "#ff615f" : "#3ec5f3";
+
+    const playerTurnValue = document.getElementById("player_turn_value");
+    playerTurnValue.innerHTML = whoIsPlaying;
+    playerTurnValue.style.color = colorPlayer;
 }
 
 function endGame(restart) {
@@ -144,7 +148,11 @@ function endGame(restart) {
     }
 
     whoIsPlaying = lastBeginnerPlayer;
-    document.getElementById("player_turn_value").innerHTML = whoIsPlaying;
+    const colorPlayer = (whoIsPlaying == "X") ? "#ff615f" : "#3ec5f3";
+
+    const playerTurnValue = document.getElementById("player_turn_value");
+    playerTurnValue.innerHTML = whoIsPlaying;
+    playerTurnValue.style.color = colorPlayer;
 
     restoreDefaultButtons();
 }
