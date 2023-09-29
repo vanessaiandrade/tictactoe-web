@@ -14,7 +14,7 @@ I did this development on the basis of my development of a tic-tac-toe game in J
 
 ## Preview
 
-[https://tictactoe-webgame.000webhostapp.com/](https://tictactoe-webgame.000webhostapp.com/)
+[https://vanessaiandrade-tic-tac-toe.netlify.app/](https://vanessaiandrade-tic-tac-toe.netlify.app/)
 
 
 ## Screenshot
